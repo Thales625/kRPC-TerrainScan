@@ -2,8 +2,7 @@ import pygame
 from math import atan2, radians
 from threading import Thread
 
-from Vector import Vector2, Vector3
-
+from PyVecs import Vector2, Vector3
 
 class Display:
     def __init__(self) -> None:

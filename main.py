@@ -3,7 +3,7 @@ import krpc
 
 from display import Display
 
-from Vector import Vector2, Vector3
+from PyVecs import Vector2, Vector3
 
 class Ray:
     def __init__(self, x, y) -> None:
@@ -40,8 +40,8 @@ stream_mass = conn.add_stream(getattr, vessel, "mass")
 stream_av_thrust = conn.add_stream(getattr, vessel, "available_thrust")
 
 # PARAMS
-matrix_size = [10, 10]
-focal_length = 5
+matrix_size = [30, 30]
+focal_length = 1
 alt_target = stream_mean_altitude()
 
 
